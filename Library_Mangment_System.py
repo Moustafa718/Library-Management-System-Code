@@ -46,6 +46,7 @@ def check_out():
                 print("Sorry, the book is currently checked out ")
         else:
             print("The Book is not in catalog. ")
+
         choice=input("Do you want to check out another book? (y/n): ")  
         if choice.lower() != "y":
             break
@@ -84,6 +85,7 @@ def list_book():
         choice=input("Do you want to go back to main Menu? (y/n): ")  
         if choice.lower() == "y":
             break
+        
         # if library empty
         if not library:
             print("library is empty ")
